@@ -1,10 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- 
-
-# @Time : 19-11-19 下午6:27 
-# @Author : shixi 
-# @Site : shixi.zhang@cloudminds.com 
-# @File : 5_longest_palindrome.py 
+# -*- coding: utf-8 -*-
 """
 给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。
 

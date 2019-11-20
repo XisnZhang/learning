@@ -1,10 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- 
-
-# @Time : 19-11-18 下午5:13 
-# @Author : shixi 
-# @Site : shixi.zhang@cloudminds.com 
-# @File : 3_Longest_substring.py 
+# -*- coding: utf-8 -*-
 """
 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
 
@@ -47,9 +42,7 @@ class Solution1:
                 d[i] = max(d[i], d[i] + s[d[i]:i].find(a))
                 if s[i] == s[d[i]]:
                     d[i] = d[i] + 1
-        print(d)
         d = [i - d[i] + 1 for i, _ in enumerate(d)]
-        print(d)
 
         return max(d)
 

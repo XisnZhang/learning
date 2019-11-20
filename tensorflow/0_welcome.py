@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- 
 
-# @Time : 19-11-15 下午3:42 
-# @Author : shixi 
-# @Site : shixi.zhang@cloudminds.com 
-# @File : 0_welcome.py
 import tensorflow as tf
 import os
 

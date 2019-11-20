@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- 
 
-# @Time : 19-11-18 上午9:56 
-# @Author : shixi 
-# @Site : shixi.zhang@cloudminds.com 
-# @File : 4_logistic_regression.py
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf

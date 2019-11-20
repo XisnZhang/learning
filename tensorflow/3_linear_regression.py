@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- 
 
-# @Time : 19-11-15 下午6:35 
-# @Author : shixi 
-# @Site : shixi.zhang@cloudminds.com 
-# @File : 3_linear_regression.py 
 """
 利用tensorflow搭建linear regression model
 """

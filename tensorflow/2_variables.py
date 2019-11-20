@@ -1,10 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- 
-
-# @Time : 19-11-15 下午4:49 
-# @Author : shixi 
-# @Site : shixi.zhang@cloudminds.com 
-# @File : 2_variables.py
+# -*- coding: utf-8 -*-
 """
 主要内容：变量， tf.Variable()
 1. variables: hold on parameters, 对train,save,restore非常重要
