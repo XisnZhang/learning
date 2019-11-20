@@ -14,7 +14,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
-if __name__ == '__main__':
+
+def linear_regression():
     tf.flags.DEFINE_string("log_dir", os.path.dirname(os.path.abspath(__file__)) + "/logs",
                            "log dir")
     tf.flags.DEFINE_integer("epoch", 100,
@@ -40,10 +41,11 @@ if __name__ == '__main__':
     w = tf.Variable(initial_value=0.5, name="w")
     b = tf.Variable(initial_value=0.0, name="b")
 
-    # #预测值,loss
+    # #build graph,loss
     Y_predicted = X * w + b
     train_loss = tf.squared_difference(Y, Y_predicted)
     tf.summary.scalar('train_loss', train_loss)
+    tf.summary.scalar('train_loss_2', train_loss)  # test
     merge_summary = tf.summary.merge_all()
     # #更新参数，更新方向是最小化train_loss
     train_op = tf.train.GradientDescentOptimizer(FLAGS.lr).minimize(train_loss)  # #随机梯度优化器
@@ -65,3 +67,7 @@ if __name__ == '__main__':
     plt.plot(train_X, wcoeff * train_X + bias)
     plt.show()
     writer.close()
+
+
+if __name__ == '__main__':
+    linear_regression()
