@@ -9,6 +9,15 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="172.16.23.6">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../smartvoice-semanticsimilarity-model-ch" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/mnt1/shixi/programs/sentence-bert" local="$PROJECT_DIR$/../sentence-bert" />
+          </mappings>
+        </serverdata>
+      </paths>
     </serverData>
     <option name="myAutoUpload" value="ALWAYS" />
   </component>
